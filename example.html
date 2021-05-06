@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Demo of a simple Cookie Consent Management pop-up built using JavaScript to work alongside Google Tag Manager (GTM).">
+    <meta name="author" content="Muhammad Ali">
+    <meta namne="robots" content="noindex">
+
+    <title>Demo - Simple Cookie Consent</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+      body {
+        padding-top: 3.5rem;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Demo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Simple Cookie Consent</h1>
+          <p>This page is an example of a simple Cookie Consent Management pop-up built using JavaScript to work in alongside Google Tag Manager (GTM).</p>
+          <p>Don't see the pop-up? You may have already accepted/declined it. Use the button below to trigger it again.</p>
+          <p><a class="btn btn-primary btn-lg" href="#" onClick="document.cookie = 'cookie-consent=; domain='+location.hostname+'; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'; location.reload();" role="button">Reset Consent</a></p>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Test This Page</h2>
+            <p>This page is firing three Custom HTML tags via GTM, which log a message in the developer console.</p>
+              <ol>
+                <li>One tag fires on all page views.</li>
+                <li>One tag fires only on page views with cookies allowed. (This tag also fires when fresh consent is given)</li>
+              </ol>
+            <p><a class="btn btn-secondary" href="https://muhammadali.xyz/js-simple-cookie-consent/" target="_blank" role="button">Read More &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>How it works</h2>
+            <p>This consent pop-up uses JavaScript alongside GTM. It allows setting up GTM tags to only fire if consent is true. A full tutorial and walk-through of this is available on my blog. <strong>Check the console log to see which tags fired</strong>.</p>
+            <p><a class="btn btn-secondary" href="https://muhammadali.xyz/js-simple-cookie-consent/" target="_blank" role="button">Read More &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Source Code</h2>
+            <p>This cookie consent pop-up mechanism is fairly simple and easy to use and understand. Find the full source code on GitHub.</p>
+            <p><a class="btn btn-secondary" href="https://github.com/MuhammadAli/js-simple-cookie-consent" target="_blank" role="button">View Source &raquo;</a></p>
+          </div>
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>&copy; <a href="https://muhammadali.xyz/" target="_blank">Muhammad Ali</a> 2021</p>
+    </footer>
+
+    <!-- Cookie Script - DO NOT include if injecting through GTM -->
+    <script type="text/javascript" src="simple-cookie-consent.js" async></script>
+
+  </body>
+</html>
